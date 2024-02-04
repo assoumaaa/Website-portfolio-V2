@@ -1,90 +1,117 @@
-"use client";
-
 import { Badge } from "./ui/badge";
+import BlinkingCode from "./blinking-code";
+import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
-import LaptopScreen from "./laptopScreen";
-import React from "react";
+import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 
-interface ProjectCardProps {
-	src: string;
-	alt: string;
-	children: React.ReactNode;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({ src, alt, children }) => (
-	<div className="relative" style={{ height: 280, width: 480, padding: 1.5 }}>
-		<Image
-			src={src}
-			alt={alt}
-			layout="fill"
-			objectFit="cover"
-			className="rounded-md"
-		/>
-		<div className="absolute bottom-0 left-0 right-0 h-3/4 flex flex-col justify-end p-4 bg-gradient-to-t from-black via-gray to-transparent opacity-0 hover:opacity-100 transition-opacity duration-200 rounded-md">
-			{children}
-		</div>
-	</div>
-);
 export default function Projects() {
 	return (
-		<div className="flex flex-col gap-10">
-			<h1 className="flex items-center justify-center text-3xl tracking-wider">
-				Projects
-			</h1>
-			<div className="grid gap-8 sm:grid-cols-2">
-				<ProjectCard src="/projects/innovateX.png" alt="innovateX">
-					<div className="flex flex-col gap-3">
-						<p className="text-white text-lg font-bold">InnovateX</p>
-						<p className="text-gray-300 text-xs mb-2">
-							A platform for innovation.
-						</p>
-						<div className="flex gap-2">
-							<Badge variant={"destructive"}>React</Badge>
-							<Badge variant={"destructive"}>Scss</Badge>
-							<Badge variant={"destructive"}>Firebase</Badge>
-						</div>
+		<div id="projects" className="flex flex-col w-full p-6 gap-10">
+			<h1 className="flex text-2xl tracking-wider">{">"} Projects</h1>
+			<div className="flex flex-col items-center justify-center gap-20 sm:flex-row">
+				<Image
+					src="/projects/deep-talks-logo.png"
+					alt="Deep Talks Logo"
+					width={200}
+					height={200}
+					style={{ borderRadius: "5%" }}
+				/>
+				<div className="flex flex-col gap-4">
+					<h2 className="font-bold text-3xl">Deep Talks</h2>
+					<Link
+						href={"https://deep-talks.vercel.app/"}
+						className="text-sm text-blue-400"
+					>
+						https://deep-talks.vercel.app/
+					</Link>
+					<span className="block">
+						Deep Talks is a website that allows users to have deep conversations
+						among their friends in a well order.
+					</span>
+					<div className="flex flex-wrap gap-4">
+						<Badge>NextJS</Badge>
+						<Badge>Tailwind</Badge>
+						<Badge>Prisma</Badge>
+						<Badge>MySQL</Badge>
 					</div>
-				</ProjectCard>
-				<ProjectCard src="/projects/spotify.png" alt="spotify">
-					<div className="flex flex-col gap-3">
-						<p className="text-white text-lg font-bold">Spotify Analyser</p>
-						<p className="text-gray-300 text-xs mb-2">
-							Find out your best artists and tracks.
-						</p>
-						<div className="flex gap-2">
-							<Badge variant={"destructive"}>React</Badge>
-							<Badge variant={"destructive"}>Express</Badge>
-							<Badge variant={"destructive"}>Spotify API</Badge>
-						</div>
-					</div>
-				</ProjectCard>
-				<ProjectCard src="/projects/spotify.png" alt="spotify">
-					<div className="flex flex-col gap-3">
-						<p className="text-white text-lg font-bold">Spotify Analyser</p>
-						<p className="text-gray-300 text-xs mb-2">
-							Find out your best artists and tracks.
-						</p>
-						<div className="flex gap-2">
-							<Badge variant={"destructive"}>React</Badge>
-							<Badge variant={"destructive"}>Express</Badge>
-							<Badge variant={"destructive"}>Spotify API</Badge>
-						</div>
-					</div>
-				</ProjectCard>
-				<ProjectCard src="/projects/spotify.png" alt="spotify">
-					<div className="flex flex-col gap-3">
-						<p className="text-white text-lg font-bold">Spotify Analyser</p>
-						<p className="text-gray-300 text-xs mb-2">
-							Find out your best artists and tracks.
-						</p>
-						<div className="flex gap-2">
-							<Badge variant={"destructive"}>React</Badge>
-							<Badge variant={"destructive"}>Express</Badge>
-							<Badge variant={"destructive"}>Spotify API</Badge>
-						</div>
-					</div>
-				</ProjectCard>
+					<span className="flex items-center justify-end gap-2 text-sm">
+						View More <FaArrowRightLong />
+					</span>
+				</div>
 			</div>
+			<Separator />
+			<div className="flex flex-col items-center justify-center gap-20 sm:flex-row">
+				<Image
+					src="/projects/spotify-logo.png"
+					alt="Spotify Logo"
+					width={200}
+					height={200}
+					style={{ borderRadius: "5%" }}
+				/>
+				<div className="flex flex-col gap-4">
+					<h2 className="font-bold text-3xl">Spotify Profile Analyser</h2>
+					<Link
+						href={"spotify-analyser.herokuapp.com"}
+						className="text-sm text-blue-400"
+					>
+						spotify-analyser.herokuapp.com
+					</Link>
+					<span className="block">
+						A web application that lets you track your top artists, top tracks,
+						and find your top artists and tracks according to a specific time
+						range, all while offering detailed features of each track and
+						allowing you to play them directly on your Spotify account.
+					</span>
+					<div className="flex flex-wrap gap-4">
+						<Badge>ReactJS</Badge>
+						<Badge>Express</Badge>
+						<Badge>Spotify API</Badge>
+					</div>
+					<span className="flex items-center justify-end gap-2 text-sm">
+						View More <FaArrowRightLong />
+					</span>
+				</div>
+			</div>
+			<Separator />
+			<div className="flex flex-col items-center justify-center gap-20 sm:flex-row">
+				<Image
+					src="/projects/gg-twitter-logo.png"
+					alt="GG Twitter Logo"
+					width={200}
+					height={200}
+					style={{ borderRadius: "5%" }}
+				/>
+				<div className="flex flex-col gap-4">
+					<h2 className="font-bold text-3xl">GG Twitter</h2>
+					<Link
+						href={"https://ggtwitter.vercel.app/"}
+						className="text-sm text-blue-400"
+					>
+						https://ggtwitter.vercel.app/
+					</Link>
+					<span className="block">
+						About GGtwitter is a platform that allows users to engage in
+						conversations and share thoughts without fear of being banned or
+						judged! It was built using T3 techstack which is : NextJS,
+						TailwindCSS, Typescript,TRPC, Prisma, and MySQL and Clerk for
+						authentication.
+					</span>
+					<div className="flex flex-wrap gap-4 ">
+						<Badge>NextJS</Badge>
+						<Badge>Tailwind</Badge>
+						<Badge>Typescript</Badge>
+						<Badge>TRPC</Badge>
+						<Badge>Prisma</Badge>
+						<Badge>MySQL</Badge>
+						<Badge>Clerk</Badge>
+					</div>
+					<span className="flex items-center justify-end gap-2 text-sm">
+						View More <FaArrowRightLong />
+					</span>
+				</div>
+			</div>
+			<Separator />
 		</div>
 	);
 }

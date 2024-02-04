@@ -1,13 +1,12 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
+import BlinkingCode from "./blinking-code";
 import { HiMiniDocumentArrowDown } from "react-icons/hi2";
 
 export default function ContactMe() {
 	return (
-		<div className="flex flex-col gap-10">
-			<h1 className="flex items-center justify-center text-3xl tracking-wider">
-				Contact Me
-			</h1>
+		<div id="contact" className="flex flex-col gap-10">
+			<h1 className="flex text-2xl tracking-wider p-6">{">"} Contact Me</h1>
 			<div className="flex items-center justify-evenly">
 				<a
 					href="https://www.linkedin.com/in/omar-assouma-a45275210/"

@@ -12,7 +12,7 @@ export default function BlinkingCode({
 	return (
 		<div
 			className={cn(
-				"bg-gray-400 animate-blink w-6 h-8 inline-flex ",
+				"bg-gray-600 animate-blink w-6 h-8 inline-flex ",
 				color,
 				size
 			)}

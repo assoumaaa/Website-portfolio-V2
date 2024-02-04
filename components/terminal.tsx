@@ -85,8 +85,8 @@ const TerminalDisplay: React.FC<{
 					</div>
 				</div>
 			))}
-			<div className="flex items-center mt-4 p-2">
-				<div className="text-green-400">
+			<div className="mt-4 p-2">
+				<div className="flex items-center gap-2 text-green-400">
 					&gt; <BlinkingCode color="bg-green-400" size="h-4 w-2" />
 				</div>
 			</div>
