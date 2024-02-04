@@ -34,9 +34,10 @@ export default function Intro() {
 				<span className="underline underline-offset-4 decoration-blue-400">
 					@Meikosoft
 				</span>
-				, where I love using code to fix real-life problems. Right now, I'm
+				, where I love using code to fix real-life problems. Right now, I&apos;m
 				focusing on building things with React and Python.
 			</h2>
+
 			<TerminalDisplay info={myInfo} />
 		</div>
 	);
