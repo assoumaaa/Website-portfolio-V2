@@ -91,11 +91,8 @@ export default function Projects() {
 						https://ggtwitter.vercel.app/
 					</Link>
 					<span className="block">
-						About GGtwitter is a platform that allows users to engage in
-						conversations and share thoughts without fear of being banned or
-						judged! It was built using T3 techstack which is : NextJS,
-						TailwindCSS, Typescript,TRPC, Prisma, and MySQL and Clerk for
-						authentication.
+						GGtwitter is a platform that allows users to engage in conversations
+						and share thoughts without fear of being banned or judged!
 					</span>
 					<div className="flex flex-wrap gap-4 ">
 						<Badge>NextJS</Badge>
