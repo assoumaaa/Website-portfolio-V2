@@ -9,7 +9,7 @@ export default function ContactMe() {
 			<h1 className="flex text-2xl tracking-wider p-6">{">"} Contact Me</h1>
 			<div className="flex items-center justify-evenly">
 				<a
-					href="https://www.linkedin.com/in/omar-assouma-a45275210/"
+					href="https://www.linkedin.com/in/omar-assouma-a60275210/"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="hover:text-blue-600 items-center flex justify-center"

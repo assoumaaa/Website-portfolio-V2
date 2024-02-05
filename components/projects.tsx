@@ -9,12 +9,12 @@ export default function Projects() {
 	return (
 		<div id="projects" className="flex flex-col w-full p-6 gap-10">
 			<h1 className="flex text-2xl tracking-wider">{">"} Projects</h1>
-			<div className="flex flex-col items-center justify-center gap-20 sm:flex-row">
+			<div className="flex flex-col items-center justify-center gap-12 sm:flex-row">
 				<Image
 					src="/projects/deep-talks-logo.png"
 					alt="Deep Talks Logo"
-					width={200}
-					height={200}
+					width={125}
+					height={125}
 					style={{ borderRadius: "5%" }}
 				/>
 				<div className="flex flex-col gap-4">
@@ -45,8 +45,8 @@ export default function Projects() {
 				<Image
 					src="/projects/spotify-logo.png"
 					alt="Spotify Logo"
-					width={200}
-					height={200}
+					width={125}
+					height={125}
 					style={{ borderRadius: "5%" }}
 				/>
 				<div className="flex flex-col gap-4">
@@ -78,8 +78,8 @@ export default function Projects() {
 				<Image
 					src="/projects/gg-twitter-logo.png"
 					alt="GG Twitter Logo"
-					width={200}
-					height={200}
+					width={125}
+					height={125}
 					style={{ borderRadius: "5%" }}
 				/>
 				<div className="flex flex-col gap-4">
