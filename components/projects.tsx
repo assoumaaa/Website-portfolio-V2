@@ -21,7 +21,7 @@ export default function Projects() {
 					<h2 className="font-bold text-3xl">Deep Talks</h2>
 					<Link
 						href={"https://deep-talks.vercel.app/"}
-						className="text-sm text-blue-400"
+						className="text-sm text-purple-400"
 					>
 						https://deep-talks.vercel.app/
 					</Link>
@@ -35,9 +35,9 @@ export default function Projects() {
 						<Badge>Prisma</Badge>
 						<Badge>MySQL</Badge>
 					</div>
-					<span className="flex items-center justify-end gap-2 text-sm">
+					{/* <span className="flex items-center justify-end gap-2 text-sm">
 						View More <FaArrowRightLong />
-					</span>
+					</span> */}
 				</div>
 			</div>
 			<Separator />
@@ -53,7 +53,7 @@ export default function Projects() {
 					<h2 className="font-bold text-3xl">Spotify Profile Analyser</h2>
 					<Link
 						href={"spotify-analyser.herokuapp.com"}
-						className="text-sm text-blue-400"
+						className="text-sm text-purple-400"
 					>
 						spotify-analyser.herokuapp.com
 					</Link>
@@ -68,9 +68,9 @@ export default function Projects() {
 						<Badge>Express</Badge>
 						<Badge>Spotify API</Badge>
 					</div>
-					<span className="flex items-center justify-end gap-2 text-sm">
+					{/* <span className="flex items-center justify-end gap-2 text-sm">
 						View More <FaArrowRightLong />
-					</span>
+					</span> */}
 				</div>
 			</div>
 			<Separator />
@@ -86,7 +86,7 @@ export default function Projects() {
 					<h2 className="font-bold text-3xl">GG Twitter</h2>
 					<Link
 						href={"https://ggtwitter.vercel.app/"}
-						className="text-sm text-blue-400"
+						className="text-sm text-purple-400"
 					>
 						https://ggtwitter.vercel.app/
 					</Link>
@@ -103,9 +103,9 @@ export default function Projects() {
 						<Badge>MySQL</Badge>
 						<Badge>Clerk</Badge>
 					</div>
-					<span className="flex items-center justify-end gap-2 text-sm">
+					{/* <span className="flex items-center justify-end gap-2 text-sm">
 						View More <FaArrowRightLong />
-					</span>
+					</span> */}
 				</div>
 			</div>
 			<Separator />

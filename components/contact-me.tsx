@@ -12,7 +12,7 @@ export default function ContactMe() {
 					href="https://www.linkedin.com/in/omar-assouma-a60275210/"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="hover:text-blue-600 items-center flex justify-center"
+					className="hover:text-purple-600 items-center flex justify-center"
 				>
 					<FaLinkedin size={"1.5rem"} />
 				</a>
@@ -20,20 +20,20 @@ export default function ContactMe() {
 					href="https://github.com/assoumaaa"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="hover:text-blue-600 items-center flex justify-center"
+					className="hover:text-purple-600 items-center flex justify-center"
 				>
 					<FaGithub size={"1.5rem"} />
 				</a>
 				<a
 					href="mailto:omarassouma01@gmail.com"
-					className="hover:text-blue-600 items-center flex justify-center"
+					className="hover:text-purple-600 items-center flex justify-center"
 				>
 					<FaEnvelope size={"1.5rem"} />
 				</a>
 				<a
 					href="/cv.pdf"
 					download
-					className="hover:text-blue-600 items-center flex justify-center"
+					className="hover:text-purple-600 items-center flex justify-center"
 				>
 					<HiMiniDocumentArrowDown size={"1.5rem"} />
 				</a>

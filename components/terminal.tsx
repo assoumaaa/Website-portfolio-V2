@@ -13,7 +13,7 @@ const TerminalDisplay: React.FC<{
 					<a
 						href={`mailto:${item}`}
 						key={item}
-						className="text-blue-400 hover:text-blue-600"
+						className="text-purple-400 hover:text-purple-600"
 					>
 						{item}
 					</a>
@@ -25,7 +25,7 @@ const TerminalDisplay: React.FC<{
 						target="_blank"
 						rel="noopener noreferrer"
 						key="LinkedIn"
-						className="text-blue-400 hover:text-blue-600"
+						className="text-purple-400 hover:text-purple-600"
 					>
 						LinkedIn
 					</a>
@@ -37,7 +37,7 @@ const TerminalDisplay: React.FC<{
 						target="_blank"
 						rel="noopener noreferrer"
 						key="GitHub"
-						className="text-blue-400 hover:text-blue-600"
+						className="text-purple-400 hover:text-purple-600"
 					>
 						GitHub
 					</a>
