@@ -1,17 +1,12 @@
-import BlogPreview from "@/components/blog-preview";
-import ContactMe from "@/components/contact-me";
 import Footer from "@/components/footer";
-import Intro from "@/components/intro";
 import Navbar from "@/components/navbar";
 
-export default function Home() {
+export default function BlogLayout({ children }) {
 	return (
 		<main className="flex justify-center min-h-screen">
 			<div className="flex flex-col w-full max-w-5xl gap-12 sm:gap-24">
 				<Navbar />
-				<Intro />
-				<BlogPreview />
-				<ContactMe />
+				{children}
 				<Footer />
 			</div>
 		</main>

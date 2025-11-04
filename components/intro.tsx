@@ -30,7 +30,7 @@ export default function Intro() {
 				<BlinkingCode size="h-12" color="bg-purple-400" />
 			</h1>
 			<h2 className="text-xl tracking-wide leading-9">
-				I work as a Technical Consultant{" "}
+				I work as a Software Engineer
 				<span className="underline underline-offset-4 decoration-purple-400">
 					@Odoo
 				</span>
